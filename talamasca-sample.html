@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>talamasca sample</title>
+</head>
+<body>
+    <h1>talamasca Samples</h1>
+    <p>Talamasca is a JavaScript library that facilitates communication between well-defined JavaScript modules. This communication is event based and allows modules to be developed, tested and implemented independently of each other.</p>
+    <p>Each section represents a module listening and sending messages to each other. Look at the console to see the messages that are being passed</p>
+  <hr />
+      <div id="hello-talamasca">
+          <h3>Hello talamasca</h3>
+        <input type="text" id="helloTxt" />
+        <input type="button" id="helloBtn" value="Submit" />
+    </div>
+  <hr />
+    <div id="product-categories-filter">
+          <h3>Product categories</h3>
+        <select>
+            <option value="0">Select a category</option>
+            <option value="1">Cars</option>
+            <option value="2">Bikes</option>
+            <option value="3">Shoes</option>
+        </select>
+    </div>
+  <hr />
+
+    <div id="product-list">
+          <h3>Products</h3>
+        <select>
+            <option value="0">Select a category</option>
+        </select>
+    </div>
+    <script src="js/jquery-2.1.4.min.js" ></script>
+<script type="text/javascript" src="js/talamasca/core.js"></script>
+<script type="text/javascript" src="js/talamasca/sandbox.js"></script>
+<script type="text/javascript" src="js/talamasca/modules/message-display.js"></script>
+<script type="text/javascript" src="js/talamasca/modules/product-categories-filter.js"></script>
+<script type="text/javascript" src="js/talamasca/modules/product-list.js"></script>
+<script type="text/javascript" src="js/talamasca/modules/hello-talamasca.js"></script>
+<script type="text/javascript" src="js/talamasca/app.js"></script>
+</body>
+</html>
