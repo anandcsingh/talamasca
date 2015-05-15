@@ -13,6 +13,10 @@ var Sandbox =  {
             },
             notify : function (evt) {
                 if (core.is_obj(evt) && evt.type) {
+                    if (!evt.data) {
+                        evt.data = { };
+                    }
+                    evt.data._sender = module_selector;
                     core.triggerEvent(evt);
                 }         
             },
