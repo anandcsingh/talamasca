@@ -28,12 +28,12 @@ var CORE = (function () {
                 this.log(1, "Module '" + moduleID + "' Registration : FAILED : one or more arguments are of incorrect type");
             }
         },
-        start: function (moduleID) {
+        start: function (moduleID, data) {
             var mod = moduleData[moduleID];
             if (mod) {
                 mod.instance = mod.create(Sandbox.create(this, moduleID));
                 mod.instance.name = moduleID;
-                mod.instance.init();
+                mod.instance.init(data);
             }
         },
         start_all: function () {
